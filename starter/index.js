@@ -12,6 +12,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "description",
+        message: "What is the porpouse of your project?",
+    },
+    {
+        type: "input",
         name: "usage",
         message: "What is the usage of your project?",
     },
@@ -34,12 +39,22 @@ const questions = [
     {
         type: "input",
         name: "contact",
-        message: "Please provide your contact information and a link to your GitHub repository",
+        message: "Please provide your GitHub username",
+    },
+    {
+        type: "input",
+        name: "name",
+        message: "What is your name?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please provide your email address",
     },
     {
         type: "input",
         name: "collaborators",
-        message: "Please provide details on how to collaborate with this project",
+        message: "Please provide your GitHub username if you want to collaborate with this project",
     },
 
 

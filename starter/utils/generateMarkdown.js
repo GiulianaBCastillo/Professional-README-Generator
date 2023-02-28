@@ -44,9 +44,9 @@ ${data.usage}
 ## Contact
 - Name ${data.name}
 - Email address ${data.email}
-- GitHub [${data.creator}](https://github.com/${data.creator})
+- GitHub [${data.contact}](https://github.com/${data.contact})
 # Contributors
-${data.contributors}
+${data.collaborators}
 ${renderLicenseSection(data.license)}
 `;
 }
