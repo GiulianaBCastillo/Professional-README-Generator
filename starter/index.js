@@ -7,38 +7,38 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        name: "Title",
+        name: "title",
         message: "What is the name of your project?",
     },
     {
         type: "input",
-        name: "Usage",
+        name: "usage",
         message: "What is the usage of your project?",
     },
     {
         type: "input",
-        name: "Installation",
+        name: "installation",
         message: "Please list any programs that you had to downoald to create the project",
     },
     {
         type: "checkbox",
-        name: "License",
+        name: "license",
         message: "What type of license are you using?",
         choices: ["MIT","APACHE2.0","MPL2.0","BSD2","BSD3","N/A"]
     },
     {
         type: "input",
-        name: "Acknowldegments",
+        name: "acknowldegments",
         message: "Please list any useful resources that you used for this project",
     },
     {
         type: "input",
-        name: "Contact",
+        name: "contact",
         message: "Please provide your contact information and a link to your GitHub repository",
     },
     {
         type: "input",
-        name: "Collaborators",
+        name: "collaborators",
         message: "Please provide details on how to collaborate with this project",
     },
 
@@ -54,8 +54,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating professional README file...");
-        writeToFile("./")
-    })
+        writeToFile("./dist/README.md", generateMarkdown({...responses}));
+    });
 
 }
 
