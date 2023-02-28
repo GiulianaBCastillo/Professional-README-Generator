@@ -36,6 +36,18 @@ ${renderLicenseBadge(data.license)}
 - [Acknowldegments] (#acknowldegments)
 - [Contact] (#contact)
 - [Collaborators] (#collaborators)
+${renderLicenseLink(data.license)}
+## Description
+${data.description}
+## Usage
+${data.usage}
+## Contact
+- Name ${data.name}
+- Email address ${data.email}
+- GitHub [${data.creator}](https://github.com/${data.creator})
+# Contributors
+${data.contributors}
+${renderLicenseSection(data.license)}
 `;
 }
 
